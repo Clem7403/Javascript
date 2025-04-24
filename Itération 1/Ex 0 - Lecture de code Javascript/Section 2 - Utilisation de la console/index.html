@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+        <h1>Exercice 0</h1>
+
+        <script type="text/javascript">
+
+        /* Section 1 */   
+
+        var name = "Joe"; /* Je déclare une variable name qui prend pour valeur un String Joe. */
+        var city = 'London'; /* Je déclare une variable city qui prend pour valeur le String London. */
+        var age = 32; /* Je déclare une variable age qui prend pour valeur l'entier 32. */
+        var isRed = true; /* Je déclare une variable isRed qui prend pour valeur un booléen true.*/
+        var isOld = age > 80; /* Je déclare une variable isOld qui prend comme valeur une comparaison, si la variable age est strictement supérieur à l'entier 80.*/
+
+        var previousJobs = ['lawyer', 'developper', 'Professionnal climber']; /* Je déclare un tableau previousJobs qui prend comme valeur des Strings à l'index 0 lawyer, à l'index 1 developper et à l'index 2 Professionnal climber.*/
+
+        function info(height, weight) {                     /* Je déclare une fonction info qui prend pour paramètre height et weight */
+            if (height > 180) {                             /* avec comme première condition si height est strictement supérieur à 180 */
+                console.log('Vous êtes grand');             /* ça affiche dans la console le message : Vous êtes grand*/
+            }
+            if (weight < 0) {                               /* Comme deuxième condition si weight est strictement inférieur à 0*/
+                console.log('oups, there is a problem');    /* Alors le message suivant s'affiche dans la console : oups, ther is a problem */
+            } else if ( weight < 15) {                      /* Sinon si weight est strictement inférieur à 15 */
+                console.log('Are you that slim ?')          /* Alors le message suivant s'affiche dans la console : Are you that slim ? */
+            } else {                                        /* Si aucune des condition n'est remplie alors */
+                console.log('Good !')                       /* Le message suivant s'affiche dans la console : Good ! */
+            }
+        }
+
+        info(165, 45);                       /* La fonction info prend en paramètre height = 165 et weight = 45 */
+
+        var myHeight = 175;                  /* Je déclare une variable myHeight qui prend pour valeur comme entier 175 */
+        var myWeight = 86;                   /* Je déclare une variable myWeight qui prend pour valeur comme entier 86 */
+
+        info(myHeight, myWeight);            /* La fonction info prend pour paramètre les variables myHeight et myWeight */
+
+        info(myHeight + 15, myWeight - 100); /* La fonction info prend pour paramètre les variables myHeight qui additionne un entier 15 et myWeight et soustrait l'entier 100 */
+
+        function toUpper(variable) {         /* La fonction toUpper prend comme variable variable */
+            return variable.toUpperCase();   /* et retourne la variable en majuscule avec la fonction native toUpperCase(). */
+        }
+
+        var upperName = toUpper(name);       /* Je déclare une variable upperName qui prend comme valeur la fonction toUpper avec comme paramètre name. */
+
+        for (i = 0; i < 3; i = i + 1) {     /* Je déclare une boucle for avec la variable i qui prend comme valeur l'entier 0; avec i strictement inférieur à 3; i s'incrémente de 1. */
+            console.log(previousJobs[i]);   /* Ca permet d'afficher dans la console les éléments du tableau previousJobs de l'index 0 à l'index strictement inférieur à 3 qui est 2. Avec [i] qui veut dire chaque élément du tableau */
+        }
+
+        /* Section 2: */
+
+        // afficher la ville dans laquele Joe vit.     
+        console.log(city);
+
+        // afficher si Joe est roux ou pas.
+        console.log("Joe est roux " + isRed);
+
+        /* Section 3 */
+
+        // console.log(myVariable);
+
+        </script>
+
+    </body>
+</html>
