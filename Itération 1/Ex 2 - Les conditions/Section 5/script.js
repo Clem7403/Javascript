@@ -2,7 +2,7 @@
 console.log('exo-2');
 
 
-let isTesting = false;
+let isTesting = true;
 
 
 const myDate = new Date();
@@ -28,21 +28,11 @@ if (isTesting){
 
 
 function date(){
-    if ( jours == 2 || jours == 3 || jours ==4  ){
+    if ( jours == 1 && heures > 7 || jours == 2 || jours == 3 || jours ==4 || jours == 5 && heures <= 15 ){
         console.log(semaine)
-    } else if (jours == 0 || jours == 6) {
+    } else {
         console.log(weekend);
-    } else if (jours == 5 && heures >= 15) {
-        console.log(weekend);
-    } else if (jours == 5){
-        console.log(semaine);
-    } else if (jours == 1 && heures < 7){
-        console.log(weekend);
-    } else if (jours == 1 ){
-        console.log(semaine);
-        
-    }
+    }   
 }
 
 console.log(date());
-
